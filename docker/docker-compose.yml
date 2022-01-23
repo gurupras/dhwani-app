@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  backend:
+    build:
+      context: ./ffmpeg
+      dockerfile: Dockerfile
+    restart: always
+    working_dir: /usr/app
+    command: /bin/bash -c '. /root/.nvm/nvm.sh && node backend'
+    volumes:
+      - ..:/usr/app
