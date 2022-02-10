@@ -2,9 +2,9 @@
   "name": "dhwani",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "cd src && vite",
+    "build": "cd src && vite build",
+    "preview": "cd src && vite preview",
     "tauri": "tauri"
   },
   "dependencies": {
